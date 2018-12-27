@@ -26,7 +26,6 @@ def get_squares_of_fabric_within_two_claims():
     coordinates_and_area = list(map(massage_data, input_as_array))
 
     all_coordinates = []
-    print(coordinates_and_area)
 
     for x_coord, y_coord, width, height in coordinates_and_area:
         for current_horizontal_place in range(x_coord, x_coord + width):
@@ -39,7 +38,6 @@ def get_squares_of_fabric_within_two_claims():
 
     for key, value in counter_of_all_coordinates.items():
         if value > 1:
-            print('here')
             overlapped_coordinates += 1
 
     return overlapped_coordinates # 101196
